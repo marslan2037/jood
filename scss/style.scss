@@ -72,22 +72,39 @@ button {
             }
         }
     }
-    .mobile-menu {
+    .mobile-menu-button {
         display: none;
         @media (min-width: 320px) and (max-width: 767px) {
             display: block;
+            font-size: 26px;
+            color: #fff;
+            margin-right: 0;
         }
     }
     ul.menu {
-        @media (min-width: 320px) and (max-width: 1410px) {
+        @media (min-width: 320px) and (max-width: 767px) {
             display: none;
+            position: absolute !important;
+            width: 160px;
+            top: 50px !important;
+            right: 0 !important;
+            background: #2890e5;
+            padding: 12px 0;
+            box-shadow: 0px 14px 30px 0 rgba(54, 57, 73, 0.09);
+            z-index: 10;
+            border-radius: 6px;
         }
         li {
             list-style: none;
             display: inline-block;
             margin-right: 47px;
             &:last-child {
-                margin-right: 0;
+                margin: 0;
+            }
+            @media (min-width: 320px) and (max-width: 767px) {
+                display: block;
+                margin: 0 0 12px;
+                padding: 0 12px;
             }
             a {
                 position: relative;
@@ -102,6 +119,9 @@ button {
                     span.underline {
                         display: block;
                     }
+                }
+                @media (min-width: 320px) and (max-width: 767px) {
+                    line-height: 32px;
                 }
                 span.underline {
                     position: absolute;
@@ -688,13 +708,7 @@ button {
         ul.menu {
             margin-bottom: 36px;
             @media (min-width: 320px) and (max-width: 767px) {
-                display: block;
-            }
-            li {
-                @media (min-width: 320px) and (max-width: 767px) {
-                    margin: 0 0 15px;
-                    display: block;
-                }
+                display: none;
             }
         }
         ul.social-menu {

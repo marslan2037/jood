@@ -62,20 +62,37 @@ button {
             width: 140px; }
             .main-container .buil-list ul li img {
               width: 100%; } }
-  .main-container .mobile-menu {
+  .main-container .mobile-menu-button {
     display: none; }
     @media (min-width: 320px) and (max-width: 767px) {
-      .main-container .mobile-menu {
-        display: block; } }
-  @media (min-width: 320px) and (max-width: 1410px) {
+      .main-container .mobile-menu-button {
+        display: block;
+        font-size: 26px;
+        color: #fff;
+        margin-right: 0; } }
+  @media (min-width: 320px) and (max-width: 767px) {
     .main-container ul.menu {
-      display: none; } }
+      display: none;
+      position: absolute !important;
+      width: 160px;
+      top: 50px !important;
+      right: 0 !important;
+      background: #2890e5;
+      padding: 12px 0;
+      box-shadow: 0px 14px 30px 0 rgba(54, 57, 73, 0.09);
+      z-index: 10;
+      border-radius: 6px; } }
   .main-container ul.menu li {
     list-style: none;
     display: inline-block;
     margin-right: 47px; }
     .main-container ul.menu li:last-child {
-      margin-right: 0; }
+      margin: 0; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container ul.menu li {
+        display: block;
+        margin: 0 0 12px;
+        padding: 0 12px; } }
     .main-container ul.menu li a {
       position: relative;
       color: #fff;
@@ -88,6 +105,9 @@ button {
         color: #FFBB00; }
         .main-container ul.menu li a:hover span.underline {
           display: block; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container ul.menu li a {
+          line-height: 32px; } }
       .main-container ul.menu li a span.underline {
         position: absolute;
         bottom: -8px;
@@ -576,11 +596,7 @@ button {
       margin-bottom: 36px; }
       @media (min-width: 320px) and (max-width: 767px) {
         .main-container footer ul.menu {
-          display: block; } }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .main-container footer ul.menu li {
-          margin: 0 0 15px;
-          display: block; } }
+          display: none; } }
     .main-container footer ul.social-menu li {
       list-style: none;
       display: inline-block;
