@@ -37,9 +37,9 @@ button {
         }
     }
     .buil-list {
-        margin: 0 0 120px;
+        margin: 0 0 122px;
         .inner-container {
-            padding: 0 162px;
+            padding: 0 105px;
         }
         ul {
             display: grid;
@@ -54,7 +54,7 @@ button {
         li {
             list-style: none;
             display: inline-block;
-            margin-right: 54px;
+            margin-right: 47px;
             &:last-child {
                 margin-right: 0;
             }
@@ -64,6 +64,7 @@ button {
                 font-size: 18px;
                 line-height: 24px;
                 font-weight: 500;
+                text-transform: capitalize;
                 text-decoration: none;
                 &:hover {
                     color: #FFBB00;
@@ -73,9 +74,9 @@ button {
                 }
                 span.underline {
                     position: absolute;
-                    bottom: -3px;
+                    bottom: -8px;
                     display: none;
-                    border-bottom: 2px solid #FFBB00;
+                    border-bottom: 4px solid #FFBB00;
                     width: 60%;
                 }
             }
@@ -111,11 +112,11 @@ button {
     header {
         position: relative;
         background: url(../images/header-bg.png) no-repeat;
-        height: 930px;
+        height: 933px;
         margin: 0 0 220px;
-        min-height: 930px;
+        /* min-height: 930px; */
         background-position: bottom;
-        background-position-y: -760px;
+        background-position-y: -755px;
         .inner-container {
             padding: 48px 113px 0;
             position: relative;
@@ -123,7 +124,7 @@ button {
         .header-mobile {
             position: absolute;
             right: 58px;
-            top: 150px;
+            top: 155px;
         }
         .header-menu {
             display: grid;
@@ -143,11 +144,13 @@ button {
             }
             ul.menu {
                 justify-self: end;
+                position: relative;
+                top: -4px;
             }
         }
         .header-text {
             width: 598px;
-            top: 320px;
+            top: 341px;
             position: absolute;
             h2 {
                 color: #fff;
@@ -155,7 +158,8 @@ button {
                 line-height: 86px;
                 font-weight: bold;
                 font-family: 'Poppins', sans-serif;
-                margin: 0 0 40px;
+                margin: 0 0 24px;
+                letter-spacing: 1px;
             }
             p {
                 font-size: 15px;
@@ -163,6 +167,7 @@ button {
                 color: #fff;
                 width: 468px;
                 margin: 0 0 35px;
+                letter-spacing: 2px;
             }
             .buttons-list {
                 display: grid;
@@ -344,32 +349,46 @@ button {
         }
         .inner-container {
             display: grid;
-            grid-template-columns: 1fr 570px;
+            grid-template-columns: 567px 570px;
             max-width: 1309px;
-            grid-gap: 50px;
+            grid-gap: 105px;
             align-items: center;
         }
         .feature-img {
-            width: 567px;
+            width: 100%;
             margin: 0;
             text-align: center;
             background: url(../images/section-mobile-bg.svg);
             .mobile-img {
-
+                width: 428px;
+                margin: 0;
             }
         }
         .feature-text {
+            span {
+                width: 87px;
+                height: 30px;
+                display: inline-block;
+                font-size: 14px;
+                line-height: 30px;
+                color: #FFBB00;
+                text-align: center;
+                background: #FDF3D7;
+                border-radius: 8px;
+                margin: 0 0 16px;
+            }
             h2 {
-                max-width: 499px;
+                max-width: 520px;
                 font-size: 40px;
                 font-weight: 900;
                 line-height: 53px;
-                margin: 0 0 30px;
+                margin: 0 0 20px;
+                letter-spacing: 0.8px;
             }
             p {
                 font-size: 16px;
                 line-height: 30px;
-                margin: 0 0 40px;
+                margin: 0 0 25px;
                 color: #8A8A8A;
             }
         }
