@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="567" height="557" viewBox="0 0 567 557">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #ccc;
+        opacity: 0.3;
+      }
+
+      .cls-2, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #e8e8e8;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        fill: #fb0;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1487fd"/>
+      <stop offset="1" stop-color="#42a0ff"/>
+    </linearGradient>
+  </defs>
+  <g id="bg" transform="translate(-89.5 -1169.557)">
+    <g id="Ellipse_57" data-name="Ellipse 57" class="cls-1" transform="translate(99.5 1169.557)">
+      <circle class="cls-5" cx="278.5" cy="278.5" r="278.5"/>
+      <circle class="cls-6" cx="278.5" cy="278.5" r="278"/>
+    </g>
+    <g id="Ellipse_58" data-name="Ellipse 58" class="cls-1" transform="translate(187.5 1257.557)">
+      <circle class="cls-5" cx="190.5" cy="190.5" r="190.5"/>
+      <circle class="cls-6" cx="190.5" cy="190.5" r="190"/>
+    </g>
+    <g id="Group_4462" data-name="Group 4462" transform="translate(609.039 1314.178)">
+      <g id="Ellipse_60" data-name="Ellipse 60" class="cls-2" transform="translate(10.461 10.379)">
+        <circle class="cls-5" cx="13" cy="13" r="13"/>
+        <circle class="cls-6" cx="13" cy="13" r="12.5"/>
+      </g>
+      <g id="Ellipse_61" data-name="Ellipse 61" class="cls-2" transform="translate(0.461 0.379)">
+        <circle class="cls-5" cx="23.5" cy="23.5" r="23.5"/>
+        <circle class="cls-6" cx="23.5" cy="23.5" r="23"/>
+      </g>
+      <circle id="Ellipse_59" data-name="Ellipse 59" class="cls-3" cx="5" cy="5" r="5" transform="translate(18.461 18.379)"/>
+    </g>
+    <g id="Group_4463" data-name="Group 4463" transform="translate(90 1507.787)">
+      <g id="Ellipse_60-2" data-name="Ellipse 60" class="cls-2" transform="translate(10.5 10.77)">
+        <ellipse class="cls-5" cx="13" cy="12.5" rx="13" ry="12.5"/>
+        <ellipse class="cls-6" cx="13" cy="12.5" rx="12.5" ry="12"/>
+      </g>
+      <g id="Ellipse_61-2" data-name="Ellipse 61" class="cls-2" transform="translate(-0.5 -0.23)">
+        <circle class="cls-5" cx="23.5" cy="23.5" r="23.5"/>
+        <circle class="cls-6" cx="23.5" cy="23.5" r="23"/>
+      </g>
+      <ellipse id="Ellipse_59-2" data-name="Ellipse 59" class="cls-4" cx="5" cy="5.5" rx="5" ry="5.5" transform="translate(18.5 17.77)"/>
+    </g>
+  </g>
+</svg>
