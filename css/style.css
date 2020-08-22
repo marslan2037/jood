@@ -22,6 +22,9 @@ button {
   max-width: 1920px; }
   .main-container .inner-container {
     max-width: 1392px; }
+    @media (min-width: 320px) and (max-width: 1410px) {
+      .main-container .inner-container {
+        padding: 0 15px !important; } }
   .main-container h1.logo {
     width: 137px;
     height: 57px;
@@ -34,14 +37,32 @@ button {
       background: url(../images/logo.svg); }
   .main-container .buil-list {
     margin: 0 0 122px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container .buil-list {
+        margin: 0 0 48px; } }
     .main-container .buil-list .inner-container {
       padding: 0 105px; }
     .main-container .buil-list ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 30px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .buil-list ul {
+          grid-template-columns: 1fr;
+          grid-gap: 26px; } }
       .main-container .buil-list ul li {
         list-style: none; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .main-container .buil-list ul li {
+            margin: 0; } }
+  .main-container .mobile-menu {
+    display: none; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container .mobile-menu {
+        display: block; } }
+  @media (min-width: 320px) and (max-width: 1410px) {
+    .main-container ul.menu {
+      display: none; } }
   .main-container ul.menu li {
     list-style: none;
     display: inline-block;
@@ -76,9 +97,17 @@ button {
     margin-right: 12px; }
     .main-container ul.store-buttons li:last-child {
       margin: 0; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container ul.store-buttons li {
+        width: 150px;
+        margin: 0 0 12px;
+        display: block; } }
     .main-container ul.store-buttons li a {
       display: block;
       text-decoration: none; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container ul.store-buttons li a img {
+          width: 100%; } }
       .main-container ul.store-buttons li a img:hover {
         box-shadow: 0 2px 8px 0 rgba(54, 57, 73, 0.09); }
   .main-container header {
@@ -86,9 +115,14 @@ button {
     background: url(../images/header-bg.png) no-repeat;
     height: 933px;
     margin: 0 0 220px;
-    /* min-height: 930px; */
     background-position: bottom;
     background-position-y: -755px; }
+    @media (min-width: 320px) and (max-width: 1410px) {
+      .main-container header {
+        height: 480px;
+        padding: 15px 0 0;
+        margin: 0 0 50px;
+        background-position-y: -1100px; } }
     .main-container header .inner-container {
       padding: 48px 113px 0;
       position: relative; }
@@ -96,11 +130,18 @@ button {
       position: absolute;
       right: 58px;
       top: 155px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container header .header-mobile {
+          display: none; } }
     .main-container header .header-menu {
       display: grid;
       grid-template-columns: 137px auto 160px;
       grid-gap: 60px;
       align-items: center; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container header .header-menu {
+          grid-template-columns: 137px 1fr;
+          grid-gap: 20px; } }
       .main-container header .header-menu button.get-app {
         border: none;
         background: #f8bb00;
@@ -109,6 +150,13 @@ button {
         height: 50px; }
         .main-container header .header-menu button.get-app:hover {
           background: #dfa800; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .main-container header .header-menu button.get-app {
+            grid-row: 2;
+            grid-column: 1/3;
+            width: 135px;
+            height: 40px;
+            line-height: 40px; } }
       .main-container header .header-menu ul.menu {
         justify-self: end;
         position: relative;
@@ -117,6 +165,10 @@ button {
       width: 598px;
       top: 341px;
       position: absolute; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container header .header-text {
+          width: 290px;
+          top: 155px; } }
       .main-container header .header-text h2 {
         color: #fff;
         font-size: 57px;
@@ -125,17 +177,30 @@ button {
         font-family: 'Poppins', sans-serif;
         margin: 0 0 24px;
         letter-spacing: 1px; }
+        @media (min-width: 320px) and (max-width: 1410px) {
+          .main-container header .header-text h2 {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 0 16px; } }
       .main-container header .header-text p {
         font-size: 15px;
         line-height: 30px;
         color: #fff;
-        width: 468px;
+        max-width: 468px;
         margin: 0 0 35px;
         letter-spacing: 2px; }
+        @media (min-width: 320px) and (max-width: 1410px) {
+          .main-container header .header-text p {
+            font-size: 12px;
+            line-height: 22px;
+            margin: 0 0 24px; } }
       .main-container header .header-text .buttons-list {
         display: grid;
         grid-template-columns: 160px 155px;
         grid-gap: 20px; }
+        @media (min-width: 320px) and (max-width: 1410px) {
+          .main-container header .header-text .buttons-list {
+            grid-template-columns: 140px; } }
         .main-container header .header-text .buttons-list button {
           width: 100%;
           border: none;
@@ -145,6 +210,11 @@ button {
           line-height: 50px;
           color: #fff;
           cursor: pointer; }
+          @media (min-width: 320px) and (max-width: 1410px) {
+            .main-container header .header-text .buttons-list button {
+              height: 42px;
+              line-height: 42px;
+              font-size: 14px; } }
           .main-container header .header-text .buttons-list button span {
             display: inline-block;
             width: 50px;
@@ -152,6 +222,11 @@ button {
             border-radius: 50%;
             position: relative;
             border: 2px solid #f8bb00; }
+            @media (min-width: 320px) and (max-width: 1410px) {
+              .main-container header .header-text .buttons-list button span {
+                width: 42px;
+                height: 42px;
+                line-height: 42px; } }
             .main-container header .header-text .buttons-list button span i.fa {
               line-height: 38px;
               background: #f8bb00;
@@ -162,10 +237,19 @@ button {
               border-radius: 50%;
               position: absolute;
               transform: translate(-50%, -50%); }
+              @media (min-width: 320px) and (max-width: 1410px) {
+                .main-container header .header-text .buttons-list button span i.fa {
+                  width: 30px;
+                  height: 30px;
+                  line-height: 30px; } }
         .main-container header .header-text .buttons-list button.have-grid {
           display: grid;
           grid-gap: 14px;
           grid-template-columns: 50px auto; }
+          @media (min-width: 320px) and (max-width: 1410px) {
+            .main-container header .header-text .buttons-list button.have-grid {
+              grid-template-columns: 42px auto;
+              grid-gap: 8px; } }
         .main-container header .header-text .buttons-list button.play-button:hover span {
           border-color: #fff; }
           .main-container header .header-text .buttons-list button.play-button:hover span i.fa {
@@ -174,30 +258,48 @@ button {
         .main-container header .header-text .buttons-list button.download-button {
           border: 2px solid #fff;
           border-radius: 8px;
-          width: 160px;
           height: 50px; }
           .main-container header .header-text .buttons-list button.download-button:hover {
             color: #2ea0ff;
             background: #fff; }
+          @media (min-width: 320px) and (max-width: 1410px) {
+            .main-container header .header-text .buttons-list button.download-button {
+              height: 42px;
+              line-height: 42px; } }
   .main-container .jd-section {
     padding: 130px 0 95px;
     text-align: center; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container .jd-section {
+        padding: 40px 0 30px; } }
     .main-container .jd-section h2 {
       font-size: 40px;
       font-weight: 900;
       line-height: 53px;
       margin-bottom: 20px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .jd-section h2 {
+          font-size: 28px;
+          line-height: 34px; } }
     .main-container .jd-section p {
-      width: 537px;
-      font-size: 16;
+      max-width: 537px;
+      font-size: 16px;
       line-height: 30px;
       margin: 0 auto;
       margin-bottom: 40px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .jd-section p {
+          font-size: 14px;
+          line-height: 24px; } }
     .main-container .jd-section form {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 70px auto;
       grid-gap: 20px; }
+      @media (min-width: 320px) and (max-width: 1410px) {
+        .main-container .jd-section form {
+          grid-template-columns: 1fr;
+          grid-template-rows: 50px 50px auto; } }
       .main-container .jd-section form input, .main-container .jd-section form textarea {
         padding: 0 30px;
         height: 70px;
@@ -214,11 +316,18 @@ button {
           background: #f6f6f1; }
         .main-container .jd-section form input::placeholder, .main-container .jd-section form textarea::placeholder {
           color: #cccccc; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .main-container .jd-section form input, .main-container .jd-section form textarea {
+            height: 50px;
+            line-height: 50px; } }
       .main-container .jd-section form textarea {
         height: 233px;
         line-height: 24px;
         padding: 25px 30px;
         grid-column: 1/3; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .main-container .jd-section form textarea {
+            grid-column: 1/2; } }
       .main-container .jd-section form button {
         width: 220px;
         height: 60px;
@@ -230,11 +339,24 @@ button {
         grid-column: 1/3; }
         .main-container .jd-section form button:hover {
           background: #1378cc; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .main-container .jd-section form button {
+            grid-column: 1/2;
+            width: 180px;
+            height: 50px; } }
     .main-container .jd-section .phone-section {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       align-items: center;
       margin: 0 0 75px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .jd-section .phone-section {
+          grid-template-columns: 170px;
+          justify-content: center;
+          grid-gap: 35px; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .jd-section .phone-section img {
+          width: 100%; } }
     .main-container .jd-section .application-statistics {
       padding: 35px 0;
       background: url(../images/application-statistics-bg.svg) no-repeat;
@@ -244,6 +366,10 @@ button {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 30px; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .main-container .jd-section .application-statistics .applications-result {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25px; } }
         .main-container .jd-section .application-statistics .applications-result div.single-item {
           width: 100%; }
         .main-container .jd-section .application-statistics .applications-result h2, .main-container .jd-section .application-statistics .applications-result p {
@@ -252,12 +378,20 @@ button {
           font-size: 40px;
           line-height: 53px;
           color: #3096FE; }
+          @media (min-width: 320px) and (max-width: 767px) {
+            .main-container .jd-section .application-statistics .applications-result h2 {
+              font-size: 24px;
+              line-height: 34px; } }
         .main-container .jd-section .application-statistics .applications-result p {
           line-height: 33px;
           font-size: 25px;
           font-weight: 500;
           color: #333333;
           margin: 0; }
+          @media (min-width: 320px) and (max-width: 767px) {
+            .main-container .jd-section .application-statistics .applications-result p {
+              line-height: 26px;
+              font-size: 18px; } }
   .main-container .jd-section.contact-us .inner-container {
     max-width: 1170px;
     margin: 0 auto; }
@@ -266,6 +400,9 @@ button {
   .main-container .features-section {
     margin: 0 0 100px;
     position: relative; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container .features-section {
+        margin: 0 0 55px; } }
     .main-container .features-section span.bg-dots {
       position: absolute;
       left: 0;
@@ -277,14 +414,23 @@ button {
       max-width: 1309px;
       grid-gap: 105px;
       align-items: center; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .features-section .inner-container {
+          grid-template-columns: 1fr;
+          grid-gap: 45px; } }
     .main-container .features-section .feature-img {
       width: 100%;
       margin: 0;
       text-align: center;
       background: url(../images/section-mobile-bg.svg); }
-      .main-container .features-section .feature-img .mobile-img {
-        width: 428px;
-        margin: 0; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .features-section .feature-img {
+          background-position: center; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .features-section .feature-img .mobile-img {
+          width: 130px; }
+          .main-container .features-section .feature-img .mobile-img img {
+            width: 100%; } }
     .main-container .features-section .feature-text span {
       width: 87px;
       height: 30px;
@@ -303,15 +449,28 @@ button {
       line-height: 53px;
       margin: 0 0 20px;
       letter-spacing: 0.8px; }
+      @media (min-width: 320px) and (max-width: 1410px) {
+        .main-container .features-section .feature-text h2 {
+          font-size: 24px;
+          line-height: 34px; } }
     .main-container .features-section .feature-text p {
       font-size: 16px;
       line-height: 30px;
       margin: 0 0 25px;
       color: #8A8A8A; }
+      @media (min-width: 320px) and (max-width: 1410px) {
+        .main-container .features-section .feature-text p {
+          grid-template-columns: 1fr;
+          grid-gap: 45px;
+          font-size: 14px;
+          line-height: 24px; } }
     .main-container .features-section .features-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 25px; }
+      @media (min-width: 320px) and (max-width: 1410px) {
+        .main-container .features-section .features-list {
+          grid-template-columns: 1fr; } }
       .main-container .features-section .features-list .single-feature {
         display: grid;
         grid-template-columns: 45px auto;
@@ -336,8 +495,14 @@ button {
   .main-container .features-section.features-section-colored {
     background: #fcfcf9;
     padding: 80px 0; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container .features-section.features-section-colored {
+        padding: 34px 0; } }
     .main-container .features-section.features-section-colored .inner-container {
       grid-template-columns: 670px 603px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .features-section.features-section-colored .inner-container {
+          grid-template-columns: 1fr; } }
     .main-container .features-section.features-section-colored .feature-img {
       background: none; }
   .main-container .banner-section {
@@ -345,28 +510,49 @@ button {
     background: url(../images/banner-bg.svg) no-repeat;
     overflow: hidden;
     background-position: center; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container .banner-section {
+        padding: 20px 0; } }
     .main-container .banner-section .inner-container {
       display: grid;
       grid-template-columns: 1.4fr 1fr;
       grid-gap: 100px;
       align-items: center;
       height: 100%; }
+      @media (min-width: 320px) and (max-width: 1410px) {
+        .main-container .banner-section .inner-container {
+          grid-template-columns: 1fr;
+          align-items: start; } }
     .main-container .banner-section .banner-text h2 {
       font-size: 50px;
       line-height: 66px;
       font-weight: bold;
       color: #fff;
       margin: 0 0 30px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .banner-section .banner-text h2 {
+          font-size: 24px;
+          line-height: 34px;
+          margin: 0 0 24px; } }
     .main-container .banner-section .banner-text p {
       font-size: 16px;
       line-height: 30px;
       color: #fff;
       margin: 0 0 40px;
       max-width: 600px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .banner-section .banner-text p {
+          font-size: 14px;
+          line-height: 26px; } }
   .main-container footer {
     padding: 60px 0 55px;
     height: 300px;
-    background: url(../images/footer-bg.svg); }
+    background: url(../images/footer-bg.svg) no-repeat; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container footer {
+        height: initial;
+        padding: 30px 0;
+        background-size: cover; } }
     .main-container footer .inner-container {
       padding: 0 113px 0; }
     .main-container footer h1.logo {
@@ -375,6 +561,13 @@ button {
       text-align: center; }
     .main-container footer ul.menu {
       margin-bottom: 36px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container footer ul.menu {
+          display: block; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container footer ul.menu li {
+          margin: 0 0 15px;
+          display: block; } }
     .main-container footer ul.social-menu li {
       list-style: none;
       display: inline-block;
