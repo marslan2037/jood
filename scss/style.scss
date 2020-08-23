@@ -16,6 +16,11 @@ ul, p {
         display: none;
     }
 }
+.tablet-hidden {
+    @media (min-width: 768px) and (max-width: 1023px) {
+        display: none;
+    }
+}
 button {
     font-size: 16px;
     font-weight: 500;
@@ -106,6 +111,9 @@ button {
                 margin: 0 0 12px;
                 padding: 0 12px;
             }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                margin-right: 15px;
+            }
             a {
                 position: relative;
                 color: #fff;
@@ -144,18 +152,21 @@ button {
         li {
             list-style: none;
             display: inline-block;
-            margin-right: 12px;
+            margin-right: 16px;
             &:last-child {
                 margin: 0;
             }
             @media (min-width: 320px) and (max-width: 767px) {
                 width: 130px;
             }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                width: 190px;
+            }
             a {
                 display: block;
                 text-decoration: none;
                 img {
-                    @media (min-width: 320px) and (max-width: 767px) {
+                    @media (min-width: 320px) and (max-width: 1023px) {
                         width: 100%;
                     }
                     &:hover {
@@ -173,11 +184,23 @@ button {
         margin: 0 0 220px;
         background-position: bottom;
         background-position-y: -755px;
-        @media (min-width: 320px) and (max-width: 1410px) {
+        @media (min-width: 320px) and (max-width: 767px) {
             height: 480px;
             padding: 15px 0 0;
             margin: 0 0 50px;
             background-position-y: -1100px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            height: 560px;
+            padding: 15px 0 0;
+            margin: 0 0 50px;
+            background-position-y: -1100px;
+        }
+        @media (min-width: 1024px) and (max-width: 1410px) {
+            height: 690px;
+            margin: 0 0 120px;
+            background-position-y: -1000px;
+            padding: 25px 0 0;
         }
         .inner-container {
             padding: 48px 113px 0;
@@ -190,6 +213,21 @@ button {
             @media (min-width: 320px) and (max-width: 767px) {
                 display: none;
             }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                width: 300px;
+                height: 430px;
+                right: 90px;
+                top: 140px;
+                img {
+                    width: 100%;
+                }
+            }
+            @media (min-width: 1024px) and (max-width: 1410px) {
+                width: 380px;
+                img {
+                    width: 100%;
+                }
+            }
         }
         .header-menu {
             display: grid;
@@ -198,6 +236,10 @@ button {
             align-items: center;
             @media (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 137px 1fr;
+                grid-gap: 20px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-template-columns: 137px auto 110px;
                 grid-gap: 20px;
             }
             button.get-app {
@@ -216,11 +258,19 @@ button {
                     height: 40px;
                     line-height: 40px;
                 }
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    width: 110px;
+                    height: 40px;
+                    line-height: 40px;
+                }
             }
             ul.menu {
                 justify-self: end;
                 position: relative;
                 top: -4px;
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    top: initial;
+                }
             }
         }
         .header-text {
@@ -231,6 +281,14 @@ button {
                 width: 290px;
                 top: 155px;
             }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                width: 330px;
+                top: 180px;
+            }
+            @media (min-width: 1024px) and (max-width: 1410px) {
+                width: 530px;
+                top: 190px;
+            }
             h2 {
                 color: #fff;
                 font-size: 57px;
@@ -239,10 +297,19 @@ button {
                 font-family: 'Poppins', sans-serif;
                 margin: 0 0 24px;
                 letter-spacing: 1px;
-                @media (min-width: 320px) and (max-width: 1410px) {
+                @media (min-width: 320px) and (max-width: 767px) {
                     font-size: 16px;
                     line-height: 24px;
                     margin: 0 0 16px;
+                }
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 26px;
+                    line-height: 32px;
+                    margin: 0 0 18px;
+                }
+                @media (min-width: 1024px) and (max-width: 1410px) {
+                    font-size: 46px;
+                    line-height: 60px;
                 }
             }
             p {
@@ -252,8 +319,13 @@ button {
                 max-width: 468px;
                 margin: 0 0 35px;
                 letter-spacing: 2px;
-                @media (min-width: 320px) and (max-width: 1410px) {
+                @media (min-width: 320px) and (max-width: 767px) {
                     font-size: 12px;
+                    line-height: 22px;
+                    margin: 0 0 24px;
+                }
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 14px;
                     line-height: 22px;
                     margin: 0 0 24px;
                 }
@@ -262,7 +334,7 @@ button {
                 display: grid;
                 grid-template-columns: 160px 155px;
                 grid-gap: 20px;
-                @media (min-width: 320px) and (max-width: 1410px) {
+                @media (min-width: 320px) and (max-width: 767px) {
                     grid-template-columns: 140px;
                 }
                 button {
@@ -274,7 +346,7 @@ button {
                     line-height: 50px;
                     color: #fff;
                     cursor: pointer;
-                    @media (min-width: 320px) and (max-width: 1410px) {
+                    @media (min-width: 320px) and (max-width: 1023px) {
                         height: 42px;
                         line-height: 42px;
                         font-size: 14px;
@@ -286,7 +358,7 @@ button {
                         border-radius: 50%;
                         position: relative;
                         border: 2px solid #f8bb00;
-                        @media (min-width: 320px) and (max-width: 1410px) {
+                        @media (min-width: 320px) and (max-width: 1023px) {
                             width: 42px;
                             height: 42px;
                             line-height: 42px;
@@ -301,7 +373,7 @@ button {
                             border-radius: 50%;
                             position: absolute;
                             transform: translate(-50%, -50%);
-                            @media (min-width: 320px) and (max-width: 1410px) {
+                            @media (min-width: 320px) and (max-width: 1023px) {
                                 width: 30px;
                                 height: 30px;
                                 line-height: 30px;
@@ -313,7 +385,7 @@ button {
                     display: grid;
                     grid-gap: 14px;
                     grid-template-columns: 50px auto;
-                    @media (min-width: 320px) and (max-width: 1410px) {
+                    @media (min-width: 320px) and (max-width: 1023px) {
                         grid-template-columns: 42px auto;
                         grid-gap: 8px;
                     }
@@ -337,7 +409,7 @@ button {
                         color: #2ea0ff;
                         background: #fff;
                     }
-                    @media (min-width: 320px) and (max-width: 1410px) {
+                    @media (min-width: 320px) and (max-width: 1023px) {
                         height: 42px;
                         line-height: 42px;
                     }
@@ -347,19 +419,27 @@ button {
     }
 
     .jd-section {
-        padding: 130px 0 95px;
+        padding: 130px 0 125px;
         text-align: center;
         @media (min-width: 320px) and (max-width: 767px) {
             padding: 40px 0 30px !important;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            padding: 50px 0 !important;
         }
         h2 {
             font-size: 40px;
             font-weight: 900;
             line-height: 53px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
             @media (min-width: 320px) and (max-width: 767px) {
                 font-size: 28px;
                 line-height: 34px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                font-size: 34px;
+                line-height: 42px;
             }
         }
         p {
@@ -367,8 +447,8 @@ button {
             font-size: 16px;
             line-height: 30px;
             margin: 0 auto;
-            margin-bottom: 40px;
-            @media (min-width: 320px) and (max-width: 767px) {
+            margin-bottom: 43px;
+            @media (min-width: 320px) and (max-width: 1023px) {
                 font-size: 14px;
                 line-height: 24px;
             }
@@ -377,10 +457,13 @@ button {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 70px auto;
-            grid-gap: 20px;
-            @media (min-width: 320px) and (max-width: 1410px) {
+            grid-gap: 27px;
+            @media (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 1fr;
                 grid-template-rows: 50px 50px auto;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-template-rows: 60px auto;
             }
             input, textarea {
                 padding: 0 30px;
@@ -403,6 +486,10 @@ button {
                 @media (min-width: 320px) and (max-width: 767px) {
                     height: 50px;
                     line-height: 50px;
+                }
+                @media (min-width: 320px) and (max-width: 767px) {
+                    height: 60px;
+                    line-height: 60px;
                 }
             }
             textarea {
@@ -432,21 +519,33 @@ button {
                     height: 45px;
                     line-height: 45px;
                 }
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    width: 175px;
+                    height: 50px;
+                    line-height: 50px;
+                }
             }
         }
         .phone-section {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             align-items: center;
-            margin: 0 0 75px;
+            margin: 0 0 92px;
+            grid-gap: 30px;
             @media (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 170px;
                 justify-content: center;
                 grid-gap: 35px;
                 margin: 0 0 25px;
             }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-template-columns: repeat(3, 222px);
+                justify-content: center;
+                grid-gap: 35px;
+                margin: 0 0 25px;
+            }
             img {
-                @media (min-width: 320px) and (max-width: 767px) {
+                @media (min-width: 320px) and (max-width: 1410px) {
                     width: 100%;
                 }
             }
@@ -456,7 +555,7 @@ button {
             background: url(../images/application-statistics-bg.svg) no-repeat;
             background-position: center;
             max-width: 1048px;
-            @media (min-width: 320px) and (max-width: 767px) {
+            @media (min-width: 320px) and (max-width: 1023px) {
                 padding: 35px 0 0;
             }
             .applications-result {
@@ -482,6 +581,11 @@ button {
                         line-height: 34px;
                         margin: 0 0 5px;
                     }
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        font-size: 30px;
+                        line-height: 32px;
+                        margin: 0 0 5px;
+                    }
                 }
                 p {
                     line-height: 33px;
@@ -492,6 +596,10 @@ button {
                     @media (min-width: 320px) and (max-width: 767px) {
                         line-height: 26px;
                         font-size: 18px;
+                    }
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        line-height: 26px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -504,14 +612,14 @@ button {
         }
     }
     .jd-section.application-screens {
-        padding-bottom: 80px;
+        padding-bottom: 84px;
     }
 
     .features-section {
         margin: 0 0 100px;
         position: relative;
-        @media (min-width: 320px) and (max-width: 767px) {
-            margin: 0 0 55px;
+        @media (min-width: 320px) and (max-width: 1023px) {
+            margin: 0 0 50px;
         }
         span.bg-dots {
             position: absolute;
@@ -524,10 +632,20 @@ button {
             grid-template-columns: 567px 570px;
             max-width: 1309px;
             grid-gap: 105px;
-            align-items: center;
             @media (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 1fr;
                 grid-gap: 45px;
+                align-items: center;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-template-columns: 1fr 3.5fr;
+                grid-gap: 70px;
+                align-items: center;
+            }
+            @media (min-width: 1024px) and (max-width: 1410px) {
+                grid-template-columns: 360px auto;
+                grid-gap: 60px;
+                align-items: center;
             }
         }
         .feature-img {
@@ -538,16 +656,25 @@ button {
             @media (min-width: 320px) and (max-width: 767px) {
                 background-position: center;
             }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                width: 220px;
+            }
             .mobile-img {
                 @media (min-width: 320px) and (max-width: 767px) {
                     width: 130px;
-                    img {
+                }
+                img {
+                    @media (min-width: 320px) and (max-width: 1023px) {
                         width: 100%;
                     }
                 }
             }
         }
         .feature-text {
+            padding-top: 62px;
+            @media (min-width: 320px) and (max-width: 1410px) {
+                padding: 0;
+            }
             span {
                 width: 87px;
                 height: 30px;
@@ -565,23 +692,25 @@ button {
                 font-size: 40px;
                 font-weight: 900;
                 line-height: 53px;
-                margin: 0 0 20px;
+                margin: 0 0 27px;
                 letter-spacing: 0.8px;
-                @media (min-width: 320px) and (max-width: 1410px) {
+                @media (min-width: 320px) and (max-width: 1023px) {
                     font-size: 24px;
                     line-height: 34px;
+                    margin: 0 0 20px;
                 }
             }
             p {
                 font-size: 16px;
                 line-height: 30px;
-                margin: 0 0 25px;
+                margin: 0 0 36px;
                 color: #8A8A8A;
-                @media (min-width: 320px) and (max-width: 1410px) {
+                @media (min-width: 320px) and (max-width: 1023px) {
                     grid-template-columns: 1fr;
                     grid-gap: 45px;
                     font-size: 14px;
                     line-height: 24px;
+                    margin: 0 0 25px;
                 }
             }
         }
@@ -589,13 +718,20 @@ button {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 25px;
-            @media (min-width: 320px) and (max-width: 1410px) {
+            @media (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 1fr;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-gap: 20px 8px;
             }
             .single-feature {
                 display: grid;
                 grid-template-columns: 45px auto;
                 grid-gap: 18px;
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    grid-template-columns: 35px auto;
+                    grid-gap: 10px;
+                }
                 .f-icon {
                     width: 45px;
                     height: 45px;
@@ -604,6 +740,10 @@ button {
                     border-radius: 8px;
                     display: grid;
                     align-items: center;
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
                 .f-data {
                     h2 {
@@ -611,11 +751,15 @@ button {
                         line-height: 26px;
                         font-weight: 900;
                         margin: 0 0 10px;
+                        @media (min-width: 768px) and (max-width: 1023px) {
+                            font-size: 18px;
+                        }
                     }
                     p {
                         color: #8A8A8A;
                         font-size: 14px;
                         line-height: 20px;
+                        margin: 0;;
                     }
                 }
             }
@@ -623,20 +767,44 @@ button {
     }
     .features-section.features-section-colored {
         background: #fcfcf9;
-        padding: 80px 0;
-        @media (min-width: 320px) and (max-width: 767px) {
+        padding: 104px 0 79px;
+        @media (min-width: 320px) and (max-width: 1023px) {
             padding: 34px 0;
         }
         .inner-container {
-            grid-template-columns: 670px 603px;
+            grid-template-columns: 720px 603px;
+            grid-gap: 55px;
+            max-width: 1376px;
             @media (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 1fr;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-template-columns: 1.4fr 1fr;
+                grid-gap: 50px;
+            }
+            @media (min-width: 1024px) and (max-width: 1410px) {
+                grid-template-columns: auto 360px;
+                grid-gap: 70px;
             }
         }
         .feature-img {
             background: none;
+            @media (min-width: 768px) and (max-width: 1023px) {
+                width: 278px;
+            }
+            img {
+                @media (min-width: 768px) and (max-width: 1410px) {
+                    width: 100%;
+                }   
+            }
         }
-        .feature-text {}
+        .feature-text {
+            padding-left: 105px;
+            padding-top: 26px;
+            @media (min-width: 320px) and (max-width: 1410px) {
+                padding: 0;
+            }
+        }
     }
 
     .banner-section {
@@ -644,41 +812,50 @@ button {
         background: url(../images/banner-bg.svg) no-repeat;
         overflow: hidden;
         background-position: center;
-        @media (min-width: 320px) and (max-width: 767px) {
+        @media (min-width: 320px) and (max-width: 1023px) {
             padding: 20px 0;
             height: initial;
         }
         .inner-container {
             display: grid;
-            grid-template-columns: 1.4fr 1fr;
+            grid-template-columns: 2fr 1fr;
             grid-gap: 100px;
             align-items: center;
             height: 100%;
-            @media (min-width: 320px) and (max-width: 1410px) {
+            letter-spacing: 1px;
+            @media (min-width: 320px) and (max-width: 1023px) {
                 grid-template-columns: 1fr;
                 align-items: start;
                 grid-gap: 25px;
             }
         }
         .banner-text {
+            padding-left: 112px;
+            @media (min-width: 320px) and (max-width: 1410px) {
+                padding: 0;
+            }
             h2 {
                 font-size: 50px;
                 line-height: 66px;
                 font-weight: bold;
                 color: #fff;
-                margin: 0 0 30px;
+                margin: 0 0 27px;
                 @media (min-width: 320px) and (max-width: 767px) {
                     font-size: 24px;
                     line-height: 34px;
                     margin: 0 0 24px;
+                }
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 38px;
+                    line-height: 48px;
                 }
             }
             p {
                 font-size: 16px;
                 line-height: 30px;
                 color: #fff;
-                margin: 0 0 40px;
-                max-width: 600px;
+                margin: 0px 0 37px;
+                max-width: 650px;
                 @media (min-width: 320px) and (max-width: 767px) {
                     font-size: 14px;
                     line-height: 26px;
@@ -696,17 +873,21 @@ button {
             padding: 30px 0;
             background-size: cover;
         }
+        @media (min-width: 767px) and (max-width: 1023px) {
+            padding: 45px 0;
+            height: 278px;
+        }
         .inner-container {
             padding: 0 113px 0;
         }
         h1.logo {
-            margin: 0 auto 36px;
+            margin: 0 auto 30px;
         }
         ul {
             text-align: center;
         }
         ul.menu {
-            margin-bottom: 36px;
+            margin-bottom: 38px;
             @media (min-width: 320px) and (max-width: 767px) {
                 display: none;
             }
@@ -715,7 +896,7 @@ button {
             li {
                 list-style: none;
                 display: inline-block;
-                margin-right: 18px;
+                margin-right: 6px;
                 &:last-child {
                     margin-right: 0;
                 }
